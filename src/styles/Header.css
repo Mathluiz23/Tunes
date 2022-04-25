@@ -4,13 +4,13 @@
   border-radius: 10px;
   box-shadow: 5px 5px 10px rgb(21, 99, 130);
   display: flex;
-  height: 70px;
+  height: 60px;
   margin: auto;
   padding: 5px 25px;
   position: relative;
   text-align: center;
-  top: -25vh;
-  width: 90%;
+  margin-top: 50px;
+  width: 83%;
 }
 
 .header-component a {

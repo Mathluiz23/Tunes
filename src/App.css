@@ -29,12 +29,11 @@ main {
   box-shadow: 0 6px 13px 0 rgb(22, 186, 204);
   display: flex;
   flex-direction: column;
-  height: 460px;
   margin: auto;
   margin-top: 20px;
   padding: 5px;
   transition: all 1s;
-  width: 100%;
+  width: 85%;
 }
 
 h1 {
@@ -70,6 +69,7 @@ form {
   scrollbar-width: none; */
   /* border: solid magenta; */
   width: 100%;
+  /* border: solid red; */
 }
 
 
