@@ -1,5 +1,10 @@
 .login-page {
-  width: 60vh;
+  width: 40%;
+  min-width: 350px;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  /* border: solid yellow; */
 }
 
 .name {
@@ -28,34 +33,40 @@
 
 label {
   font-weight: 600;
-  height: 30px;
+  height: 20px;
   margin: 25px 0;
+  width: 100%;
+  /* border: solid green; */
 }
 
 
 input, textarea {
   border-radius: 5px;
   border-style: hidden;
+  margin: auto;
   color: rgb(255, 255, 255);
   height: 30px;
   outline: transparent;
-  width: 90%;
+  width: 100%;
 }
 
 label input {
   display: block;
+  /* border: solid yellow; */
+  width: 100%;
 }
 
 textarea {
   height: 80px;
-  resize: none;
+  color:rgb(0, 0, 0)
+  /* resize: none; */
 }
 
 .login-description-input {
   align-items: flex-start;
   display: flex;
   flex-direction: column;
-  height: 90px;
+  height: 60px;
   margin-bottom: 0;
 }
 
@@ -65,19 +76,56 @@ textarea {
   color: rgb(0, 0, 0);
   cursor: pointer;
   font-size: smaller;
-  font-weight: 100;
-  height: 15px;
-  margin: -5px -5px;
-  padding: 5px;
-  width: 140px;
+  font-weight: 70;
+  height: 12px;
+  /* margin: -5px -5px;
+  padding: 0px; */
+  width: 100px;
+  /* border: solid rgb(51, 255, 0); */
 }
 
 .upload-image-button button {
   margin: 5px 5px 0;
-  padding: 10px;
-  width: 140px;
+  padding: 5px;
+  width: 50px;
 }
 
 .fa-headphones {
   height: 50px;
+}
+
+
+@media ( max-width : 500px ) {
+
+  label {
+    font-weight: 600;
+    height: 20px;
+    margin: 25px 0;
+    width: 100%;
+    /* border: solid green; */
+  }
+
+
+  input, textarea {
+    border-radius: 5px;
+    border-style: hidden;
+    margin: auto;
+    color: rgb(255, 255, 255);
+    height: 30px;
+    outline: transparent;
+    width: 100%;
+  }
+
+  label input {
+    display: block;
+    /* border: solid yellow; */
+    width: 100%;
+  }
+
+  textarea {
+    height: 80px;
+    color:rgb(0, 0, 0)
+    /* resize: none; */
+  }
+
 }

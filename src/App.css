@@ -29,17 +29,18 @@ main {
   box-shadow: 0 6px 13px 0 rgb(22, 186, 204);
   display: flex;
   flex-direction: column;
-  height: 420px;
+  height: 460px;
   margin: auto;
-  margin-top: 25px;
-  padding: 40px;
+  margin-top: 20px;
+  padding: 5px;
   transition: all 1s;
-  width: 80%;
+  width: 100%;
 }
 
 h1 {
   font-style: oblique;
-  margin-left: 5px;
+  margin-top: 30px;
+  /* border:solid yellow; */
 }
 
 
@@ -47,12 +48,11 @@ button {
   background-color: rgb(28, 202, 255);
   border-radius: 5px;
   border-style: none;
-  /* color: black; */
   cursor: pointer;
   font-weight: 800;
   height: 35px;
   margin: auto;
-  margin-top: 30px;
+  margin-top: 20px;
   width: 200px;
 }
 
@@ -61,18 +61,26 @@ input {
 }
 
 form {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  -ms-overflow-style: none;
+  /* -ms-overflow-style: none;
   overflow-x: hidden;
   scroll-behavior: smooth;
-  scrollbar-width: none;
+  scrollbar-width: none; */
+  /* border: solid magenta; */
+  width: 100%;
 }
 
 
-@media ( min-width : 300px ) {
+@media ( max-width : 500px ) {
 
   body {
     overflow-x: hidden;
+  }
+
+  form {
+    /* border: solid rgb(3, 153, 208); */
+    /* width: 250px; */
   }
 }
