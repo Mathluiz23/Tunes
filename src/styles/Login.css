@@ -1,0 +1,83 @@
+.login-page {
+  width: 60vh;
+}
+
+.name {
+  align-items: center;
+  color: rgb(28, 202, 255);
+  display: flex;
+  font-weight: 700;
+  justify-content: center;
+  margin-top: -30px;
+  text-align: center;
+}
+
+.name h1 {
+  color: rgb(28, 202, 255);
+}
+
+.music {
+  color: rgb(28, 202, 255);
+  height: 50px;
+  width: 100px;
+}
+
+.music a {
+  color: rgb(28, 202, 255);
+}
+
+label {
+  font-weight: 600;
+  height: 30px;
+  margin: 25px 0;
+}
+
+
+input, textarea {
+  border-radius: 5px;
+  border-style: hidden;
+  color: rgb(255, 255, 255);
+  height: 30px;
+  outline: transparent;
+  width: 90%;
+}
+
+label input {
+  display: block;
+}
+
+textarea {
+  height: 80px;
+  resize: none;
+}
+
+.login-description-input {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  height: 90px;
+  margin-bottom: 0;
+}
+
+.upload-image-button {
+  align-self: center;
+  border-radius: 3px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  font-size: smaller;
+  font-weight: 100;
+  height: 15px;
+  margin: -5px -5px;
+  padding: 5px;
+  width: 140px;
+}
+
+.upload-image-button button {
+  margin: 5px 5px 0;
+  padding: 10px;
+  width: 140px;
+}
+
+.fa-headphones {
+  height: 50px;
+}

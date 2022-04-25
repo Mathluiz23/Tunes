@@ -1,0 +1,19 @@
+.page-profile-edit form {
+  height: 100vh;
+}
+
+.edit-input-description {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+}
+
+.edit-button-save {
+  display: inline-block;
+  margin-left: 30px;
+  margin-top: 80px;
+}
+
+.page-profile-edit img {
+  margin-left: 30px;
+}

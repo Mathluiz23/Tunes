@@ -1,0 +1,100 @@
+.tracklist {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  width: 100%;
+}
+
+.music-card {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  /* border: solid yellow; */
+}
+
+.music-card h4 {
+  font-weight: 700;
+  width: 25%;
+}
+
+.music-card label {
+  align-content: center;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  width: 150px;
+}
+
+.music-card input {
+  width: 25px;
+}
+
+audio {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 2px 1px 3px 0 rgb(28, 202, 255);
+  transition: all 0.7s linear;
+}
+
+audio:hover, audio:focus, audio:active {
+  box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+  transform: scale(1.05);
+}
+
+.album-info-wrapper {
+  align-items: center;
+  display: flex;
+}
+
+.album-info-wrapper img {
+  border-radius: 10px;
+  width: 180px;
+}
+
+.album-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+}
+
+h2 {
+  color: rgb(28, 202, 255);
+  font-weight: 700;
+}
+
+@media ( max-width : 600px ) {
+  
+  .music-card {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border: solid yellow;
+  }
+
+  .music-card h4 {
+    font-weight: 400;
+    width: 80px;
+    /* border: solid gray; */
+  }
+
+  .music-card label {
+    /* border: solid magenta; */
+    width: 100px;
+  }
+
+  .music-card input {
+    width: 15px;
+    /* border: solid green; */
+  }
+
+  audio {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 1px 3px 0 rgb(28, 202, 255);
+    transition: all 0.7s linear;
+    width: 40%;
+  }
+  
+}
