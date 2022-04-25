@@ -1,6 +1,6 @@
 .login-page {
   width: 40%;
-  min-width: 350px;
+  min-width: 280px;
   display: flex;
   align-items: center;
   /* justify-content: center; */
@@ -101,7 +101,7 @@ textarea {
     font-weight: 600;
     height: 20px;
     margin: 25px 0;
-    width: 100%;
+    width: 90%;
     /* border: solid green; */
   }
 
@@ -113,13 +113,14 @@ textarea {
     color: rgb(255, 255, 255);
     height: 30px;
     outline: transparent;
-    width: 100%;
+    width: 90%;
+    margin-left: 0;
   }
 
   label input {
     display: block;
     /* border: solid yellow; */
-    width: 100%;
+    width: 90%;
   }
 
   textarea {
