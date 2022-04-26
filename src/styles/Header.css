@@ -61,17 +61,30 @@
 @media ( max-width : 600px ) {
 
   .header-component {
-    min-width: 300px;
-    padding: 5px 15px;
     width: 80%;
+    min-width: 300px;
+    padding: 5px;
+    /* border: solid green; */
   }
 
   .header-component a {
     font-weight: 500;
     text-decoration: none;
+    margin-left: 0;
   }
 
   .profile-container {
     display: none;
   }
+
+
+  .profile-container img {
+    display: none;
+  }
+
+  .header-user-name {
+    align-items: center;
+    display: none;
+  }
+
 }

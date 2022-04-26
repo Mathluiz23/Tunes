@@ -1,8 +1,10 @@
 .page-search {
-  display: flex;
-  justify-content: space-around;
+  /* display: flex;
+  flex-direction: row;
+  justify-content: space-around; */
+  /* align-items: center; */
   margin: auto;
-  width: 100%;
+  width: 80%;
   /* border: solid red; */
 }
 
@@ -19,7 +21,11 @@
   }
 
   .search-div input {
-    width: 350px;
+    /* display: flex;
+    flex-direction: row;
+    align-items: center; */
+    width: 60%;
+    min-width: 200px;
     margin: 10px;
     height: 35px;
     padding: 5px;
@@ -39,10 +45,11 @@
   .search-results span {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     margin: auto;
     font-weight: 700;
-    width: 80%;
-    height: 20px;
+    width: 90%;
+    height: 50px;
     /* border: solid chartreuse; */
   }
   
@@ -82,6 +89,7 @@
 
 .album-artist-name {
   align-items: center;
+  color: rgb(28, 202, 255);
   display: flex;
   font-weight: bold;
   height: 50px;
@@ -94,7 +102,7 @@
 
 .album-title {
   align-items: center;
-  color: rgb(28, 202, 255);
+  color: rgb(255, 255, 255);
   display: flex;
   height: 200px;
   justify-content: center;
@@ -134,43 +142,29 @@
 
 @media ( max-width : 600px ) {
 
-  .page-search {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    /* width: 80%; */
-    /* border: solid red; */
-  }
-
-  .search-div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: black;
-  }
-
   .search-div input {
-    height: 25px;
+    width: 40%;
+    min-width: 200px;
     margin: 10px;
-    padding: 5px;
-    width: 100%;
-    /* border: solid green; */
-  }
-
-  .search-div button {
     height: 35px;
-    margin: 10px;
     padding: 5px;
-    width: 80px;
     /* border: solid yellow; */
+  }
+  
+  
+  .search-div button {
+    width: 100px;
+    margin: 10px;
+    height: 45px;
+    padding: 5px;
+    font-weight: 800;
+   
   }
 
   .albumList {
     display: flex;
     flex-wrap: wrap;
     margin: auto;
-    justify-content:space-around;
     margin-top: 30px;
     width: 90%;
     /* border: solid yellow; */
@@ -179,34 +173,41 @@
   .album-card {
     background-color: #000000;
     border-radius: 10px;
-    width: 180px;
+    width: 160px;
     height: 210px;
     box-shadow: 2px 5px 5px rgb(36, 36, 36);
-    margin: 10px;
-    padding: 3px;
+    margin: 5px;
+    /* padding: 5px; */
+    /* border: solid aqua; */
   }
 
   .album-artist-name {
-    font-size: 13px;
-    height: 40px;
+    font-size: 14px;
+    height: 35px;
+    color: rgb(28, 202, 255);
+    overflow:scroll;
+    /* border: solid magenta; */
   }
 
   .album-title {
-    margin-top: 5px;
-    height: 200px;
+    /* margin-top: 20px; */
+    height: 150px;
     width: 100%;
-    font-size: 15px;
+    font-size: 12px;
+    /* border: solid darkblue; */
+    color: white;
   }
 
   .album-card a {
     height: 180px;
-    margin-top: -5px;
+    margin-top: -3px;
   }
 
   .album-card img {
     border-radius: 10px;
     display: flex;
-    width: 90px;
+    width: 110px;
+    padding: 4px;
   }
 
 }
