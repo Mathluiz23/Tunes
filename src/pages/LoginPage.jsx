@@ -64,13 +64,11 @@ class LoginPage extends Component {
         {loading ? (
           <Loading loading={ loading } />
         ) : (
-          <>
-            <div className="name">
-              <h1>
-                MathTunes
-                <GiMusicalNotes />
-              </h1>
-            </div>
+          <div className="container-login">
+            <h1>
+              MathTunes
+              <GiMusicalNotes />
+            </h1>
 
             <form>
               <label htmlFor="login-name-input">
@@ -78,6 +76,7 @@ class LoginPage extends Component {
                 <input
                   id="login-name-input"
                   data-testid="login-name-input"
+                  className="login-name-input"
                   name="name"
                   type="text"
                   value={ name }
@@ -89,6 +88,7 @@ class LoginPage extends Component {
                 <input
                   id="login-email-input"
                   data-testid="login-email-input"
+                  className="login-email-input"
                   type="email"
                   name="email"
                   value={ email }
@@ -126,6 +126,7 @@ class LoginPage extends Component {
               <button
                 type="submit"
                 data-testid="login-submit-button"
+                className="button-entrar"
                 onClick={ () => {
                   this.handleClick(handleSubmit);
                 } }
@@ -134,7 +135,7 @@ class LoginPage extends Component {
                 Entrar
               </button>
             </form>
-          </>
+          </div>
         )}
       </div>
     );

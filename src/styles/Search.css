@@ -1,14 +1,16 @@
 .page-search {
-  /* display: flex;
+  display: flex;
   flex-direction: row;
-  justify-content: space-around; */
-  /* align-items: center; */
+  justify-content: space-around;
+  align-items: center;
   margin: auto;
   width: 80%;
+  height: 150px;
   /* border: solid red; */
 }
 
 .search-artist-input {
+  /* border: solid khaki; */
 }
   
   .search-results {
@@ -18,26 +20,34 @@
   }
 
   .search-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /* border: solid aquamarine; */
+    width: 80%;
   }
 
   .search-div input {
-    /* display: flex;
+    display: flex;
     flex-direction: row;
-    align-items: center; */
-    width: 60%;
+    align-items: center;
+    width: 80%;
     min-width: 200px;
     margin: 10px;
     height: 35px;
     padding: 5px;
+    border-radius: 5px;
     /* border: solid yellow; */
   }
   
   
   .search-div button {
-    width: 120px;
+    width: 150px;
     margin: 10px;
-    height: 45px;
+    height: 47px;
     padding: 5px;
+    /* border: solid yellow; */
     font-weight: 800;
    
   }

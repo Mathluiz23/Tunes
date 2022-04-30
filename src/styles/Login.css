@@ -1,24 +1,102 @@
 .login-page {
+  display: flex;
   width: 40%;
   min-width: 280px;
   display: flex;
   align-items: center;
-  /* justify-content: center; */
+  margin: auto;
+  margin-top: 50px;
+  justify-content: center;
+  height: 100%;
   /* border: solid yellow; */
 }
 
-.name {
+.page-login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  /* border: solid magenta; */
+  margin: auto;
+  width: 80%;
+  height: 100%;
+  /* padding: 5px; */
+}
+
+.login-name-input {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  /* border: solid brown; */
+}
+
+.label-login {
+  margin-top: -5px;
+  border: solid violet;
+}
+
+
+.login-email-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  /* border: solid rgb(42, 165, 138); */
+}
+
+.container-login {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /* justify-content: center; */
   color: rgb(28, 202, 255);
   display: flex;
   font-weight: 700;
-  justify-content: center;
-  margin-top: -30px;
-  text-align: center;
+  margin: auto;
+  width: 80%;
+  /* border: solid blueviolet; */
 }
 
-.name h1 {
+.container-login label {
+  display: flex;
+  flex-direction: column;
+  margin-top: 8px;
+ /* padding: 5px; */
+
+ /* border: solid coral; */
+}
+
+.container-login h1 {
+  display: flex;
+  justify-content: center;
   color: rgb(28, 202, 255);
+  align-items: center;
+}
+
+.container-login form {
+  flex-direction: column;
+  color: rgb(28, 202, 255);
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  min-height: 350px;
+  /* border: solid rgb(94, 255, 0); */
+}
+
+.container-login textarea {
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  border-radius: 5px;
+  color: black;
+  /* border: solid rgb(251, 255, 0); */
 }
 
 .music {
@@ -27,46 +105,23 @@
   width: 100px;
 }
 
+.login-image-input {
+  /* border: solid navy; */
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 80px;
+}
+
 .music a {
   color: rgb(28, 202, 255);
-}
-
-label {
-  font-weight: 600;
-  height: 20px;
-  margin: 25px 0;
-  width: 100%;
-  /* border: solid green; */
-}
-
-
-input, textarea {
-  border-radius: 5px;
-  border-style: hidden;
-  margin: auto;
-  color: rgb(255, 255, 255);
-  height: 30px;
-  outline: transparent;
-  width: 100%;
-}
-
-label input {
-  display: block;
-  /* border: solid yellow; */
-  width: 100%;
-}
-
-textarea {
-  height: 80px;
-  color:rgb(0, 0, 0)
-  /* resize: none; */
 }
 
 .login-description-input {
   align-items: flex-start;
   display: flex;
   flex-direction: column;
-  height: 60px;
+  height: 80px;
   margin-bottom: 0;
 }
 
@@ -77,11 +132,12 @@ textarea {
   cursor: pointer;
   font-size: smaller;
   font-weight: 70;
-  height: 12px;
+  height: 50px;
+  flex-wrap: wrap;
   /* margin: -5px -5px;
   padding: 0px; */
-  width: 100px;
-  /* border: solid rgb(51, 255, 0); */
+  width: 100%;
+  /* border: solid rgb(197, 8, 8); */
 }
 
 .upload-image-button button {
@@ -92,6 +148,13 @@ textarea {
 
 .fa-headphones {
   height: 50px;
+}
+
+.button-entrar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: solid blueviolet; */
 }
 
 

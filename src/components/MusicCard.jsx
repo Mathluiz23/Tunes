@@ -17,22 +17,28 @@ class MusicCard extends Component {
               alt="Capa do álbum"
               className="favorites-album-artwork"
             />) : '' }
-        <h4>{trackName}</h4>
+        <div className="music-card-name">
+          <h4>{trackName}</h4>
+        </div>
 
-        <audio data-testid="audio-component" src={ previewUrl } controls>
-          <track kind="captions" />
-          O seu navegador não suporta o elemento
-          <code>audio</code>
-          .
-        </audio>
-        <FavoriteSong
-          trackInfo={ { trackName,
-            artist,
-            previewUrl,
-            trackId,
-            artwork } }
-          updateFavoritesList={ updateFavoritesList }
-        />
+        <div className="audio-album">
+          <audio data-testid="audio-component" src={ previewUrl } controls>
+            <track kind="captions" />
+            O seu navegador não suporta o elemento
+            <code>audio</code>
+            .
+          </audio>
+        </div>
+        <div>
+          <FavoriteSong
+            trackInfo={ { trackName,
+              artist,
+              previewUrl,
+              trackId,
+              artwork } }
+            updateFavoritesList={ updateFavoritesList }
+          />
+        </div>
       </div>
     );
   }

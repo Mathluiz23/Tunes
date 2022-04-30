@@ -44,22 +44,25 @@ class FavoriteSong extends Component {
       loading
         ? <Loading loading={ loading } />
         : (
-          <label
-            htmlFor={ `favorite-checkbox-${trackId}` }
-            data-testid={ `checkbox-music-${trackId}` }
-          >
-            Favorita
-            <input
-              type="checkbox"
-              name="favorite"
-              id={ `favorite-checkbox-${trackId}` }
-              checked={ isFavorite }
-              onChange={ () => {
-                this.onFavoriteClick(isFavorite);
-                if (updateFavoritesList) updateFavoritesList();
-              } }
-            />
-          </label>));
+          <div>
+            <label
+              htmlFor={ `favorite-checkbox-${trackId}` }
+              data-testid={ `checkbox-music-${trackId}` }
+            >
+              Favorita
+              <input
+                className="favorite-album"
+                type="checkbox"
+                name="favorite"
+                id={ `favorite-checkbox-${trackId}` }
+                checked={ isFavorite }
+                onChange={ () => {
+                  this.onFavoriteClick(isFavorite);
+                  if (updateFavoritesList) updateFavoritesList();
+                } }
+              />
+            </label>
+          </div>));
   }
 }
 

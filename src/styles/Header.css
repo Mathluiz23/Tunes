@@ -61,7 +61,7 @@
 @media ( max-width : 600px ) {
 
   .header-component {
-    width: 80%;
+    width: 85%;
     min-width: 300px;
     padding: 5px;
     /* border: solid green; */

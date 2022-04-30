@@ -3,38 +3,65 @@
   flex-direction: column;
   margin-top: 50px;
   width: 100%;
+  /* border: solid rgb(234, 0, 255); */
 }
 
 .music-card {
   align-items: center;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100%;
   /* border: solid yellow; */
+  margin: 5px;
 }
 
-.music-card h4 {
-  font-weight: 700;
-  width: 25%;
+.music-card-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: solid lightcoral; */
+  width: 150px;
+  height: 100%;
+  font-size: 18px;
+}
+
+.audio-album {
+  display: flex;
+  justify-content: center;
+  /* border: solid red; */
+  width: 70%;
+  height: 60px;
 }
 
 .music-card label {
-  align-content: center;
   display: flex;
-  flex-flow: column wrap;
-  justify-content: space-around;
-  width: 150px;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 50px;
+  font-size: 18px;
+  /* border: solid seagreen; */
 }
 
-.music-card input {
-  width: 25px;
+
+.favorite-album {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: solid rgb(28, 202, 255); */
+  height: 50%;
+  padding: 20px;
+  width: 50%;
 }
 
 audio {
-  background-color: white;
-  border-radius: 10px;
+  background-color: rgb(242, 242, 242);
+  border-radius: 8px;
   box-shadow: 2px 1px 3px 0 rgb(28, 202, 255);
   transition: all 0.7s linear;
+  width: 60%;
+  min-width: 150px;
+  height: 100%;
 }
 
 audio:hover, audio:focus, audio:active {
@@ -45,6 +72,11 @@ audio:hover, audio:focus, audio:active {
 .album-info-wrapper {
   align-items: center;
   display: flex;
+  justify-content:space-evenly;
+  /* border: solid chartreuse; */
+  margin: auto;
+  margin-top: 15px;
+  width: 80%;
 }
 
 .album-info-wrapper img {
@@ -56,6 +88,9 @@ audio:hover, audio:focus, audio:active {
   display: flex;
   flex-direction: column;
   margin-left: 50px;
+  width: 200px;
+  /* border: solid yellow; */
+  font-size: 20px;
 }
 
 h2 {
@@ -63,7 +98,8 @@ h2 {
   font-weight: 700;
 }
 
-@media ( max-width : 600px ) {
+
+/* @media ( max-width : 600px ) {
   
   .music-card {
     align-items: center;
@@ -76,17 +112,17 @@ h2 {
   .music-card h4 {
     font-weight: 400;
     width: 80px;
-    /* border: solid gray; */
+    border: solid gray;
   }
 
   .music-card label {
-    /* border: solid magenta; */
+    border: solid magenta;
     width: 100px;
   }
 
   .music-card input {
     width: 15px;
-    /* border: solid green; */
+    border: solid green;
   }
 
   audio {
@@ -97,4 +133,4 @@ h2 {
     width: 40%;
   }
   
-}
+} */
