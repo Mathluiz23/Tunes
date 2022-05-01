@@ -2,13 +2,13 @@
   border-radius: 7px;
   height: 80px;
   margin-right: 5px;
-  border: solid yellow;
+  /* border: solid yellow; */
 }
 
 @media ( max-width : 500px ) {
   .favorites-album-artwork {
     border-radius: 7px;
     height: 55px;
-    border: solid rgb(0, 247, 255);
+    /* border: solid rgb(0, 247, 255); */
   }
 }
