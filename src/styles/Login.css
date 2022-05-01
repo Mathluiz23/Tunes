@@ -24,6 +24,7 @@
 }
 
 .login-name-input {
+  color: rgb(1, 0, 0);
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
@@ -40,6 +41,7 @@
 
 
 .login-email-input {
+  color: rgb(1, 0, 0);
   display: flex;
   flex-direction: column;
   justify-content: center;
