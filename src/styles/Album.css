@@ -12,15 +12,17 @@
   justify-content: space-around;
   width: 100%;
   /* border: solid yellow; */
-  margin: 5px;
+  margin-top: 25px;
 }
 
 .music-card-name {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   /* border: solid lightcoral; */
-  width: 150px;
+  width: 20%;
+  min-width: 100px;
   height: 100%;
   font-size: 18px;
 }
@@ -29,7 +31,7 @@
   display: flex;
   justify-content: center;
   /* border: solid red; */
-  width: 70%;
+  width: 60%;
   height: 60px;
 }
 
@@ -39,19 +41,14 @@
   justify-content: center;
   width: 100px;
   height: 50px;
-  font-size: 18px;
+  font-size: 20px;
   /* border: solid seagreen; */
 }
 
-
 .favorite-album {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* border: solid rgb(28, 202, 255); */
   height: 50%;
-  padding: 20px;
   width: 50%;
+  margin-left: 5px;
 }
 
 audio {
@@ -59,7 +56,7 @@ audio {
   border-radius: 8px;
   box-shadow: 2px 1px 3px 0 rgb(28, 202, 255);
   transition: all 0.7s linear;
-  width: 60%;
+  width: 75%;
   min-width: 150px;
   height: 100%;
 }
@@ -99,38 +96,96 @@ h2 {
 }
 
 
-/* @media ( max-width : 600px ) {
-  
+@media ( max-width : 600px ) {
   .music-card {
     align-items: center;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
-    border: solid yellow;
-  }
-
-  .music-card h4 {
-    font-weight: 400;
-    width: 80px;
-    border: solid gray;
-  }
-
-  .music-card label {
-    border: solid magenta;
-    width: 100px;
-  }
-
-  .music-card input {
-    width: 15px;
-    border: solid green;
-  }
-
-  audio {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 2px 1px 3px 0 rgb(28, 202, 255);
-    transition: all 0.7s linear;
-    width: 40%;
+    /* border: solid yellow; */
+    margin-top: 25px;
   }
   
-} */
+  .music-card-name {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    /* border: solid lightcoral; */
+    width: 20%;
+    min-width: 70px;
+    height: 100%;
+    font-size: 16px;
+  }
+  
+  .audio-album {
+    display: flex;
+    justify-content: center;
+    /* border: solid red; */
+    width: 60%;
+    height: 60px;
+    padding: 5px;
+  }
+  
+  .music-card label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 50px;
+    font-size: 15px;
+    /* border: solid seagreen; */
+  }
+  
+  .favorite-album {
+    height: 30%;
+    width: 50%;
+    margin-left: 5px;
+  }
+  
+  audio {
+    background-color: rgb(242, 242, 242);
+    border-radius: 5px;
+    box-shadow: 2px 1px 3px 0 rgb(28, 202, 255);
+    transition: all 0.7s linear;
+    width: 55%;
+    min-width: 150px;
+    height: 100%;
+  }
+  
+  audio:hover, audio:focus, audio:active {
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+    transform: scale(1.05);
+  }
+  
+  .album-info-wrapper {
+    align-items: center;
+    display: flex;
+    justify-content:space-evenly;
+    /* border: solid chartreuse; */
+    margin: auto;
+    margin-top: 15px;
+    width: 100%;
+  }
+  
+  .album-info-wrapper img {
+    border-radius: 10px;
+    width: 140px;
+  }
+  
+  .album-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    width: 250px;
+    /* border: solid yellow; */
+    font-size: 15px;
+  }
+  
+  h2 {
+    color: rgb(28, 202, 255);
+    font-weight: 700;
+  }
+  
+}
