@@ -2,8 +2,8 @@ import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import FavoriteSong from './FavoriteSong';
 
-const MAX_CHARACTERS = 25;
-// const OK_CHARACTERS = 20;
+const MAX_CHARACTERS = 35;
+const OK_CHARACTERS = 20;
 
 class MusicCard extends Component {
   render() {
@@ -21,7 +21,12 @@ class MusicCard extends Component {
               className="favorites-album-artwork"
             />) : '' }
         <div className="music-card-name">
-          <h4>{ `${trackName.substr(0, MAX_CHARACTERS)}...`}</h4>
+          <h4>
+            {' '}
+            { trackName.length < OK_CHARACTERS
+              ? trackName
+              : `${trackName.substr(0, MAX_CHARACTERS)}...`}
+          </h4>
         </div>
 
         <div className="audio-album">

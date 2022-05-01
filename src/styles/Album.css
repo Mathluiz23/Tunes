@@ -113,11 +113,11 @@ h2 {
     align-items: center;
     text-align: center;
     /* border: solid lightcoral; */
-    overflow-y: auto;
+    /* overflow-x: scroll; */
     width: 20%;
     min-width: 70px;
     height: 100%;
-    font-size: 16px;
+    font-size: 15px;
   }
   
   .audio-album {
@@ -126,7 +126,7 @@ h2 {
     /* border: solid red; */
     width: 60%;
     height: 60px;
-    padding: 5px;
+    padding: 8px;
   }
   
   .music-card label {
@@ -135,7 +135,7 @@ h2 {
     justify-content: center;
     width: 80px;
     height: 50px;
-    font-size: 15px;
+    font-size: 14px;
     /* border: solid seagreen; */
   }
   
@@ -150,7 +150,7 @@ h2 {
     border-radius: 5px;
     box-shadow: 2px 1px 3px 0 rgb(28, 202, 255);
     transition: all 0.7s linear;
-    width: 55%;
+    width: 85%;
     min-width: 150px;
     height: 100%;
   }
@@ -167,7 +167,7 @@ h2 {
     /* border: solid chartreuse; */
     margin: auto;
     margin-top: 15px;
-    width: 100%;
+    width: 90%;
   }
   
   .album-info-wrapper img {
@@ -183,10 +183,17 @@ h2 {
     /* border: solid yellow; */
     font-size: 15px;
   }
-  
-  h2 {
-    color: rgb(28, 202, 255);
-    font-weight: 700;
+
+}
+
+@media ( max-width : 350px ) {
+  audio {
+    background-color: rgb(242, 242, 242);
+    border-radius: 5px;
+    box-shadow: 2px 1px 3px 0 rgb(28, 202, 255);
+    transition: all 0.7s linear;
+    width: 85%;
+    min-width: 120px;
+    height: 100%;
   }
-  
 }
