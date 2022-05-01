@@ -113,6 +113,7 @@ h2 {
     align-items: center;
     text-align: center;
     /* border: solid lightcoral; */
+    overflow-y: auto;
     width: 20%;
     min-width: 70px;
     height: 100%;
