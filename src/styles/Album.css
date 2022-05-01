@@ -112,7 +112,7 @@ h2 {
     flex-wrap: wrap;
     align-items: center;
     text-align: center;
-    border: solid lightcoral;
+    /* border: solid lightcoral; */
     /* overflow-x: scroll; */
     width: 20%;
     min-width: 70px;
