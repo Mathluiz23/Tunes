@@ -66,7 +66,7 @@ class LoginPage extends Component {
         ) : (
           <div className="container-login">
             <h1>
-              MathTunes
+              LoveSongs
               <GiMusicalNotes />
             </h1>
 
