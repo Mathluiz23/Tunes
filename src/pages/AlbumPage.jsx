@@ -4,6 +4,9 @@ import MusicCard from '../components/MusicCard';
 import getMusics from '../services/musicsAPI';
 import '../styles/Album.css';
 
+const MAX_CHARACTERS = 45;
+const OK_CHARACTERS = 25;
+
 class AlbumPage extends Component {
   constructor() {
     super();
@@ -50,8 +53,19 @@ class AlbumPage extends Component {
         <div className="album-info-wrapper">
           <img src={ artwork } alt={ `Capa do álbum ${title}` } />
           <div className="album-info">
-            <h2 data-testid="album-name">{ title }</h2>
-            <h3 data-testid="artist-name">{ artist }</h3>
+            <h2 data-testid="album-name">
+              { title.length < OK_CHARACTERS
+                ? title
+                : `${title.substring(0, MAX_CHARACTERS)}...`}
+
+            </h2>
+            <h3 data-testid="artist-name">
+              {' '}
+              { artist.length < OK_CHARACTERS
+                ? artist
+                : `${artist.substring(0, MAX_CHARACTERS)}...`}
+
+            </h3>
           </div>
         </div>
         <div className="tracklist">
