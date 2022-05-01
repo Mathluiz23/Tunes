@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import FavoriteSong from './FavoriteSong';
 
-const MAX_CHARACTERS = 35;
+const MAX_CHARACTERS = 30;
 const OK_CHARACTERS = 20;
 
 class MusicCard extends Component {

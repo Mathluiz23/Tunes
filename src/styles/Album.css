@@ -112,7 +112,7 @@ h2 {
     flex-wrap: wrap;
     align-items: center;
     text-align: center;
-    /* border: solid lightcoral; */
+    border: solid lightcoral;
     /* overflow-x: scroll; */
     width: 20%;
     min-width: 70px;
@@ -186,7 +186,7 @@ h2 {
 
 }
 
-@media ( max-width : 350px ) {
+@media ( max-width : 450px ) {
   audio {
     background-color: rgb(242, 242, 242);
     border-radius: 5px;
@@ -195,5 +195,13 @@ h2 {
     width: 85%;
     min-width: 120px;
     height: 100%;
+  }
+
+  .music-card-name {
+    border: solid lightcoral;
+    min-width: 70px;
+    max-width: 180px;
+    font-size: 14px;
+    overflow-x: auto;
   }
 }
