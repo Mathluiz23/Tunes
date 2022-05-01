@@ -159,39 +159,3 @@
   /* border: solid blueviolet; */
 }
 
-
-@media ( max-width : 500px ) {
-
-  label {
-    font-weight: 600;
-    height: 20px;
-    margin: 25px 0;
-    width: 90%;
-    /* border: solid green; */
-  }
-
-
-  input, textarea {
-    border-radius: 5px;
-    border-style: hidden;
-    margin: auto;
-    color: rgb(255, 255, 255);
-    height: 30px;
-    outline: transparent;
-    width: 90%;
-    margin-left: 0;
-  }
-
-  label input {
-    display: block;
-    /* border: solid yellow; */
-    width: 90%;
-  }
-
-  textarea {
-    height: 80px;
-    color:rgb(0, 0, 0)
-    /* resize: none; */
-  }
-
-}
