@@ -198,7 +198,7 @@ h2 {
   }
 
   .music-card-name {
-    border: solid lightcoral;
+    /* border: solid lightcoral; */
     min-width: 70px;
     max-width: 180px;
     font-size: 14px;
