@@ -12,6 +12,7 @@
   /* align-items: center; */
   margin: auto;
   width: 70%;
+  color: black;
   /* height: 50%; */
   /* border: solid yellow; */
 }
@@ -29,6 +30,7 @@
   height: 25px;
   border-radius: 5px;
   min-width: 200px;
+  color: black;
   /* max-width: 300px; */
   /* border: solid yellowgreen; */
 }
@@ -40,6 +42,7 @@
   height: 120px;
   width: 90%;
   min-width: 200px;
+  color: black;
   /* margin-top: 20px; */
   /* border: solid rgb(0, 255, 234); */
 }
@@ -50,6 +53,7 @@
   border-radius: 5px;
   /* min-width: 150px; */
   margin: 10px;
+  color: black;
   /* border: solid blue; */
 }
 
