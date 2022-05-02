@@ -36,6 +36,7 @@ main {
   width: 90%;
   min-width: 300px;
   min-height: 150px;
+  margin-bottom: 20px;
 }
 
 h1 {

@@ -1,21 +1,57 @@
 .profile-image {
   background-color: rgb(0, 0, 255);
   border-radius: 50%;
-  height: 200px;
-  width: 200px;
+  height: 180px;
+  width: 180px;
   -webkit-transition: width 5s, height 5s, background-color 2s, -webkit-transform 2s;
   transition: width 5s, height 5s, background-color 2s, transform 2s;
+  /* border: solid yellow; */
 }
 
 .profile-image:hover {
   background-color: #FFCCCC;
   box-shadow: 10px -10px 20px rgb(65, 150, 167);
-  height: 320px;
-  width: 320px;
+  height: 280px;
+  width: 280px;
   -webkit-transform: rotate(360deg);
   transform: rotate(360deg);
 }
 
 h3 {
   font-weight: 700;
+}
+
+h1 {
+  align-items: center;
+  color: rgb(28, 202, 255);
+  text-align: center;
+  /* border: solid yellow; */
+}
+
+.container-profile {
+  margin: auto;
+  width: 80%;
+  height: 90%;
+  /* border: solid violet; */
+}
+
+.profile-name {
+  /* border: solid greenyellow; */
+  margin: 5px;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.profile-email {
+  /* border: solid greenyellow; */
+  margin: 5px;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.profile-description {
+  /* border: solid greenyellow; */
+  margin: 5px;
+  padding: 5px;
+  font-size: 14px;
 }

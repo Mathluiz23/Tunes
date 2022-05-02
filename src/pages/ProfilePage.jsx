@@ -33,7 +33,7 @@ class ProfilePage extends Component {
       loading ? (
         <Loading loading={ loading } />
       ) : (
-        <div data-testid="page-profile">
+        <div className="container-profile" data-testid="page-profile">
           <h1>Perfil</h1>
           <img
             data-testid="profile-image"

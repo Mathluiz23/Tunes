@@ -78,6 +78,7 @@ class ProfileEditPage extends Component {
       currentImage,
       loading,
       buttonDisabled } = this.state;
+
     return (
       <div data-testid="page-profile-edit" className="page-profile-edit">
         <h1>Editar perfil</h1>

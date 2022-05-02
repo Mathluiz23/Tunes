@@ -1,19 +1,44 @@
 .page-profile-edit form {
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 70%;
+  /* height: 50%; */
+  /* border: solid yellow; */
+}
+
+.page-profile-edit label {
+  margin: 10px;
+}
+
+
+.page-profile-edit input {
+  margin: 8px;
+  width: 60%;
+  max-width: 300px;
 }
 
 .edit-input-description {
   display: flex;
   flex-direction: column;
-  height: 100px;
+  height: 150px;
+  width: 72%;
+  margin-top: 20px;
+  /* border: solid rgb(0, 255, 234); */
+}
+
+.edit-input-description textarea {
+  height: 80px;
 }
 
 .edit-button-save {
   display: inline-block;
-  margin-left: 30px;
-  margin-top: 80px;
+  margin: 10px;
+  margin-left: 10px;
 }
 
 .page-profile-edit img {
   margin-left: 30px;
+  border: solid brown;
+  margin: 20px;
 }
