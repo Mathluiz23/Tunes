@@ -52,9 +52,10 @@
 }
 
 .profile-container img {
+  align-items: center;
   border-radius: 50%;
-  height: 65px;
-  width: 65px;
+  height: 55px;
+  width: 55px;
 }
 
 

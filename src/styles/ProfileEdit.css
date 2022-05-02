@@ -1,8 +1,17 @@
+.page-profile-edit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: solid blue; */
+}
+
 .page-profile-edit form {
   display: flex;
   flex-direction: column;
+  /* align-items: center; */
   margin: auto;
-  width: 70%;
+  width: 50%;
   /* height: 50%; */
   /* border: solid yellow; */
 }
@@ -14,8 +23,8 @@
 
 .page-profile-edit input {
   margin: 8px;
-  width: 60%;
-  min-width: 180px;
+  width: 90%;
+  min-width: 200px;
   /* max-width: 300px; */
 }
 
@@ -23,7 +32,7 @@
   display: flex;
   flex-direction: column;
   height: 150px;
-  width: 72%;
+  width: 90%;
   min-width: 200px;
   margin-top: 20px;
   /* border: solid rgb(0, 255, 234); */
@@ -31,6 +40,7 @@
 
 .edit-input-description textarea {
   height: 80px;
+  margin: 10px;
 }
 
 .edit-button-save {
@@ -40,7 +50,7 @@
 }
 
 .page-profile-edit img {
-  margin-left: 30px;
-  border: solid brown;
+  /* margin-left: 30px; */
+  /* border: solid brown; */
   margin: 20px;
 }

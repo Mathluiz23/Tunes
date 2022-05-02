@@ -25,18 +25,27 @@ h1 {
   align-items: center;
   color: rgb(28, 202, 255);
   text-align: center;
+  margin: 15px;
   /* border: solid yellow; */
 }
 
 .container-profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: solid blue; */
   margin: auto;
-  width: 80%;
+  width: 100%;
   height: 90%;
   /* border: solid violet; */
 }
 
 .profile-name {
+  /* display: flex; */
+  align-items: center;
   /* border: solid greenyellow; */
+  width: 50%;
   margin: 5px;
   padding: 5px;
   font-size: 16px;
@@ -44,8 +53,9 @@ h1 {
 
 .profile-email {
   /* border: solid greenyellow; */
-  margin: 5px;
+  margin: 10px;
   padding: 5px;
+  width: 50%;
   font-size: 16px;
 }
 
@@ -54,4 +64,5 @@ h1 {
   margin: 5px;
   padding: 5px;
   font-size: 14px;
+  width: 50%;
 }
