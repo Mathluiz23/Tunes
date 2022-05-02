@@ -8,14 +8,15 @@
 }
 
 .page-profile-edit label {
-  margin: 10px;
+  margin: 5px;
 }
 
 
 .page-profile-edit input {
   margin: 8px;
   width: 60%;
-  max-width: 300px;
+  min-width: 180px;
+  /* max-width: 300px; */
 }
 
 .edit-input-description {
@@ -23,6 +24,7 @@
   flex-direction: column;
   height: 150px;
   width: 72%;
+  min-width: 200px;
   margin-top: 20px;
   /* border: solid rgb(0, 255, 234); */
 }
