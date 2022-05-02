@@ -159,6 +159,7 @@
   align-items: center;
   margin-top: 0;
   width: 150px;
+  cursor: pointer;
   /* border: solid blueviolet; */
 }
 
