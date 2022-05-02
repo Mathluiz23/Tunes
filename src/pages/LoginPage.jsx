@@ -98,7 +98,7 @@ class LoginPage extends Component {
                   onChange={ this.handleChange }
                 />
               </label>
-              <label
+              {/* <label
                 htmlFor="login-description-input"
                 className="login-description-input"
               >
@@ -110,7 +110,7 @@ class LoginPage extends Component {
                   value={ description }
                   onChange={ this.handleChange }
                 />
-              </label>
+              </label> */}
               <label htmlFor="login-image-input">
                 Foto de Perfil:
                 <label htmlFor="login-image-input" className="upload-image-button">
