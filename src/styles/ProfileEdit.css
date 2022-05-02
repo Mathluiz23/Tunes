@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* border: solid blue; */
+  border: solid blue;
 }
 
 .page-profile-edit form {
@@ -12,7 +12,6 @@
   /* align-items: center; */
   margin: auto;
   width: 70%;
-  color: black;
   /* height: 50%; */
   /* border: solid yellow; */
 }
@@ -25,6 +24,8 @@
 
 
 .page-profile-edit input {
+  display: flex;
+  flex-direction: column;
   margin: 8px;
   width: 85%;
   height: 25px;
@@ -42,14 +43,13 @@
   height: 120px;
   width: 90%;
   min-width: 200px;
-  color: black;
   /* margin-top: 20px; */
   /* border: solid rgb(0, 255, 234); */
 }
 
 .edit-input-description textarea {
   height: 50px;
-  width: 90%;
+  width: 85%;
   border-radius: 5px;
   /* min-width: 150px; */
   margin: 10px;
@@ -78,4 +78,11 @@
   /* margin-left: 30px; */
   /* border: solid brown; */
   margin: 20px;
+}
+
+.edit-image-input-file input {
+  color: rgb(255, 255, 255);
+  width: 50%;
+  /* background-color: aliceblue; */
+  /* border: solid firebrick; */
 }

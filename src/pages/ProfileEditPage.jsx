@@ -139,7 +139,9 @@ class ProfileEditPage extends Component {
                 onChange={ this.handleChange }
                 required
               />
-              ou
+            </label>
+            ou
+            <label htmlFor="edit-input-image" className="edit-image-input-file">
               <input
                 id="edit-image-input-file"
                 data-testid="edit-image-input-file"
