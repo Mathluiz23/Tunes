@@ -10,6 +10,7 @@
   width: 80%;
   align-items: center;
   text-align: center;
+  margin-top: 20px;
   /* border: solid yellow; */
 }
 
@@ -26,6 +27,7 @@
     width: 80%;
     align-items: center;
     text-align: center;
-    border: solid yellow;
+    margin-top: 20px;
+    /* border: solid yellow; */
   }
 }
