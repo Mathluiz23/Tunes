@@ -34,7 +34,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* border: solid blue; */
+  flex-wrap: wrap;
   margin: auto;
   width: 100%;
   height: 90%;
@@ -43,31 +43,50 @@ h1 {
 
 .profile-name {
   /* display: flex; */
+  justify-content: center;
   align-items: center;
   /* border: solid greenyellow; */
-  width: 80%;
-  margin: 5px;
+  flex-wrap: wrap;
+  margin: 10px;
   padding: 5px;
+  text-align: center;
+  width: 80%;
   font-size: 16px;
 }
 
 .profile-email {
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
   /* border: solid greenyellow; */
+  flex-wrap: wrap;
+  margin: 10px;
+  padding: 5px;
+  text-align: center;
+  width: 80%;
+  font-size: 16px;
+}
+
+.profile-description {
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* border: solid greenyellow; */
+  flex-wrap: wrap;
   margin: 10px;
   padding: 5px;
   width: 80%;
   font-size: 16px;
 }
 
-.profile-description {
-  /* border: solid greenyellow; */
-  margin: 5px;
-  padding: 5px;
-  font-size: 14px;
-  width: 80%;
-}
-
 .button-edit-perfil {
   /* border: solid violet; */
   width: 150px;
+  margin: 10px;
+}
+
+label {
+  margin: 5px;
+  border: solid blue;
 }
