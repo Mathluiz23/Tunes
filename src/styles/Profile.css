@@ -45,7 +45,7 @@ h1 {
   /* display: flex; */
   align-items: center;
   /* border: solid greenyellow; */
-  width: 50%;
+  width: 80%;
   margin: 5px;
   padding: 5px;
   font-size: 16px;
@@ -55,7 +55,7 @@ h1 {
   /* border: solid greenyellow; */
   margin: 10px;
   padding: 5px;
-  width: 50%;
+  width: 80%;
   font-size: 16px;
 }
 
@@ -64,5 +64,5 @@ h1 {
   margin: 5px;
   padding: 5px;
   font-size: 14px;
-  width: 50%;
+  width: 80%;
 }
