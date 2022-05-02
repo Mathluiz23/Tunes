@@ -71,7 +71,7 @@ class LoginPage extends Component {
               <GiMusicalNotes />
             </h1> */}
 
-            <img className="logotunes" src={ logotunes } />
+            <img className="logotunes" alt="logo" src={ logotunes } />
 
             <form>
               <label htmlFor="login-name-input">
