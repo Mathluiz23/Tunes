@@ -20,7 +20,8 @@
   margin: auto;
   width: 80%;
   height: 100%;
-  /* padding: 5px; */
+  font-size: 14px;
+  padding: 5px;
 }
 
 .login-name-input {
@@ -35,8 +36,8 @@
 }
 
 .label-login {
-  margin-top: -5px;
-  border: solid violet;
+  margin-top: 10px;
+  /* border: solid violet; */
 }
 
 
@@ -68,7 +69,7 @@
 .container-login label {
   display: flex;
   flex-direction: column;
-  margin-top: 8px;
+  margin-top: 15px;
  /* padding: 5px; */
 
  /* border: solid coral; */
@@ -156,6 +157,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 0;
   /* border: solid blueviolet; */
 }
 
+.logotunes {
+  width: 95%;
+  height: 100px;
+  border-radius: 15px;
+  margin: 10px;
+  border:none;
+  box-shadow: 1px 2px 2px rgb(21, 99, 130);
+}

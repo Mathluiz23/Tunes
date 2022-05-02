@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { GiMusicalNotes } from 'react-icons/gi';
+// import { GiMusicalNotes } from 'react-icons/gi';
 import { createUser } from '../services/userAPI';
 import Loading from '../components/Loading';
 import '../styles/Login.css';
+import logotunes from '../images/logotunes.png';
 
 class LoginPage extends Component {
   constructor() {
@@ -65,10 +66,12 @@ class LoginPage extends Component {
           <Loading loading={ loading } />
         ) : (
           <div className="container-login">
-            <h1>
-              LoveSongs
+            {/* <h1>
+              GoodNoise
               <GiMusicalNotes />
-            </h1>
+            </h1> */}
+
+            <img className="logotunes" src={ logotunes } />
 
             <form>
               <label htmlFor="login-name-input">
