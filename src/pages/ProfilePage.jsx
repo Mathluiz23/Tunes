@@ -54,7 +54,7 @@ class ProfilePage extends Component {
             { description }
           </div>
           <Link to="/profile/edit">
-            <button type="button">
+            <button className="button-edit-perfil" type="button">
               Editar perfil
             </button>
           </Link>

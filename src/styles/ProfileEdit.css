@@ -44,9 +44,20 @@
 }
 
 .edit-button-save {
-  display: inline-block;
-  margin: 10px;
-  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration:none;
+  width: 150px;
+  /* margin-left: 30%; */
+  /* border: solid yellow; */
+  text-decoration: none;
+}
+
+
+.edit-button-save link {
+  text-decoration: none;
+  /* border: solid violet; */
 }
 
 .page-profile-edit img {
