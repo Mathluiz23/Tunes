@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: solid blue;
+  /* border: solid blue; */
 }
 
 .page-profile-edit form {

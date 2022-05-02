@@ -68,16 +68,31 @@ h1 {
 }
 
 .profile-description {
-  /* display: flex; */
+  display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
   text-align: center;
   /* border: solid greenyellow; */
   flex-wrap: wrap;
   margin: 10px;
   padding: 5px;
-  width: 80%;
+  width: 60%;
+  min-height: 150px;
   font-size: 16px;
+}
+
+.profile-description textarea {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  min-height: 120px;
+  height: auto;
+  flex-wrap: nowrap;
+  /* border: solid blue; */
+  color: black;
 }
 
 .button-edit-perfil {

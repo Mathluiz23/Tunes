@@ -51,7 +51,7 @@ class ProfilePage extends Component {
           </div>
           <div data-testid="profile-description" className="profile-description">
             <h3>Descrição: </h3>
-            { description }
+            <textarea>{ description }</textarea>
           </div>
           <Link to="/profile/edit">
             <button className="button-edit-perfil" type="button">
