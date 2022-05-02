@@ -5,10 +5,25 @@
   /* border: solid yellow; */
 }
 
+.favorite-songs-list h2 {
+  margin: auto;
+  width: 80%;
+  align-items: center;
+  /* border: solid yellow; */
+}
+
 @media ( max-width : 500px ) {
   .favorites-album-artwork {
     border-radius: 7px;
     height: 55px;
     /* border: solid rgb(0, 247, 255); */
+  }
+
+  .favorite-songs-list h2 {
+    margin: auto;
+    font-size: 15px;
+    width: 80%;
+    align-items: center;
+    /* border: solid yellow; */
   }
 }
