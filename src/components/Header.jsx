@@ -28,6 +28,7 @@ class Header extends Component {
 
   render() {
     const { userName, profilePicture, loading } = this.state;
+
     return (
       <header data-testid="header-component" className="header-component">
 

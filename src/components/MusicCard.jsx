@@ -11,6 +11,7 @@ class MusicCard extends Component {
       trackName,
       artist,
       previewUrl, trackId, updateFavoritesList, artwork, favoritesPage } = this.props;
+
     return (
       <div className="music-card">
         { favoritesPage

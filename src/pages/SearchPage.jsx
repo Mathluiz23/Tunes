@@ -38,6 +38,7 @@ class SearchPage extends Component {
 
   render() {
     const { search, buttonDisabled, albumsList, loading, lastestSearch } = this.state;
+
     return (
       <div data-testid="page-search">
         <form>

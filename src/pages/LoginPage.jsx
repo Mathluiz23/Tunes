@@ -58,7 +58,7 @@ class LoginPage extends Component {
   };
 
   render() {
-    const { name, email, description, loading, buttonDisabled } = this.state;
+    const { name, email, loading, buttonDisabled } = this.state;
     const { handleSubmit } = this.props;
     return (
       <div data-testid="page-login" className="page-login">
@@ -66,10 +66,6 @@ class LoginPage extends Component {
           <Loading loading={ loading } />
         ) : (
           <div className="container-login">
-            {/* <h1>
-              GoodNoise
-              <GiMusicalNotes />
-            </h1> */}
 
             <img className="logotunes" alt="logo" src={ logotunes } />
 
@@ -108,6 +104,7 @@ class LoginPage extends Component {
                   data-testid="login-description-input"
                   name="description"
                   value={ description }
+                  // na linha 61 excluída
                   onChange={ this.handleChange }
                 />
               </label> */}

@@ -12,7 +12,6 @@ class Search extends Component {
       <div className="search-results">
         <span>
           Resultado de álbuns de:
-          {' '}
           { search }
         </span>
         <div className="albumList">

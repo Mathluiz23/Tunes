@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
-// import { AiOutlineHeart, AiFillHeart } from 'react-icons/ai';
 import { getFavoriteSongs, addSong, removeSong } from '../services/favoriteSongsAPI';
 import Loading from './Loading';
 
@@ -69,8 +68,8 @@ class FavoriteSong extends Component {
 FavoriteSong.propTypes = {
   trackInfo: PropTypes.shape({
     trackId: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
-    trackName: PropTypes.string.isRequired,
     artist: PropTypes.string.isRequired,
+    trackName: PropTypes.string.isRequired,
     previewUrl: PropTypes.string.isRequired,
   }).isRequired,
   updateFavoritesList: PropTypes.func,
@@ -79,4 +78,5 @@ FavoriteSong.propTypes = {
 FavoriteSong.defaultProps = {
   updateFavoritesList: null,
 };
+
 export default FavoriteSong;

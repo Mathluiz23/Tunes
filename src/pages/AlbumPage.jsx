@@ -48,6 +48,7 @@ class AlbumPage extends Component {
 
   render() {
     const { title, artist, artwork, tracks } = this.state;
+
     return (
       <div data-testid="page-album" className="page-album">
         <div className="album-info-wrapper">
@@ -60,7 +61,6 @@ class AlbumPage extends Component {
 
             </h2>
             <h3 data-testid="artist-name">
-              {' '}
               { artist.length < OK_CHARACTERS
                 ? artist
                 : `${artist.substring(0, MAX_CHARACTERS)}...`}

@@ -8,7 +8,9 @@ const OK_CHARACTERS = 20;
 class AlbumCard extends Component {
   render() {
     const {
-      album: { collectionId, collectionName, artistName, artworkUrl100 } } = this.props;
+      album: { collectionId, collectionName, artistName, artworkUrl100 },
+    } = this.props;
+
     return (
       <div data-testid="album-card" className="album-card">
         <p className="album-artist-name">
@@ -38,9 +40,9 @@ class AlbumCard extends Component {
 
 AlbumCard.propTypes = {
   album: PropTypes.shape({
-    collectionId: PropTypes.number,
-    artistName: PropTypes.string,
     collectionName: PropTypes.string,
+    artistName: PropTypes.string,
+    collectionId: PropTypes.number,
     artworkUrl100: PropTypes.string,
   }).isRequired,
 };
