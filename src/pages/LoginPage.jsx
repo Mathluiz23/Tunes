@@ -94,20 +94,6 @@ class LoginPage extends Component {
                   onChange={ this.handleChange }
                 />
               </label>
-              {/* <label
-                htmlFor="login-description-input"
-                className="login-description-input"
-              >
-                Descrição:
-                <textarea
-                  id="login-description-input"
-                  data-testid="login-description-input"
-                  name="description"
-                  value={ description }
-                  // na linha 61 excluída
-                  onChange={ this.handleChange }
-                />
-              </label> */}
               <label htmlFor="login-image-input">
                 Foto de Perfil:
                 <label htmlFor="login-image-input" className="upload-image-button">

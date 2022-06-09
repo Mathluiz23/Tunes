@@ -1,12 +1,13 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
+import '../styles/Loading.css';
 
 class Loading extends Component {
   render() {
     const { loading } = this.props;
     if (loading) {
       return (
-        <span className="loading">Carregando...</span>
+        <span className="loading" />
       );
     }
     return '';

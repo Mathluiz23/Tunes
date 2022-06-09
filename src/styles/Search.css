@@ -3,102 +3,89 @@
   color: rgb(1, 0, 0);
   display: flex;
   flex-direction: row;
+  height: 150px;
   justify-content: space-around;
   margin: auto;
   width: 80%;
-  height: 150px;
-  /* border: solid red; */
 }
 
 .search-artist-input {
-  /* border: solid khaki; */
 }
-  
-  .search-results {
-    margin: auto;
-    margin-top: 20px;
-    /* border: solid forestgreen; */
-  }
 
-  .search-div {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    /* border: solid aquamarine; */
-    width: 80%;
-  }
+.search-results {
+  margin: auto;
+  margin-top: 20px;
+}
 
-  .search-div input {
-    color: rgb(1, 0, 0);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 80%;
-    min-width: 200px;
-    margin: 10px;
-    height: 35px;
-    padding: 5px;
-    border-radius: 5px;
-    /* border: solid yellow; */
-  }
-  
-  
-  .search-div button {
-    width: 150px;
-    margin: 10px;
-    height: 47px;
-    padding: 5px;
-    /* border: solid yellow; */
-    font-weight: 800;
-   
-  }
-  
-  .search-results span {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: auto;
-    font-weight: 700;
-    width: 90%;
-    height: 50px;
-    /* border: solid chartreuse; */
-  }
-  
-  .searched-artist {
-    color: #5edb9b;
-  }
-  
-  .albumList {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 30px;
-    width: 100%;
-    margin-bottom: 30px;
-    /* border: solid yellow; */
-  }
+.search-div {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 80%;
+}
 
-  .album-card {
-    background-color: rgb(8, 10, 10);
-    border-radius: 10px;
-    margin: 10px;
-    padding: 10px;
-    width: 210px;
-    height: 280px;
-    /* border: solid blue; */
-    /* border-style: outset; */
-    /* border-color: #181818; */
-    box-shadow: 2px 5px 5px rgb(36, 36, 36);
-  }
-  .album-card:hover {
-    /* box-shadow: inset 0 0 0 4px rgb(28, 202, 255); */
-    box-shadow: 2px 5px 10px rgb(28, 202, 255);
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
-    transition: 1.5s;
-  }
+.search-div input {
+  align-items: center;
+  border-radius: 5px;
+  color: rgb(1, 0, 0);
+  display: flex;
+  flex-direction: row;
+  height: 35px;
+  margin: 10px;
+  min-width: 200px;
+  padding: 5px;
+  width: 80%;
+}
+
+.search-div button {
+  font-weight: 800;
+  height: 47px;
+  margin: 10px;
+  padding: 5px;
+  width: 150px;
+}
+
+.search-results span {
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: 700;
+  height: 50px;
+  justify-content: center;
+  margin: auto;
+  width: 90%;
+}
+
+.searched-artist {
+  color: #5edb9b;
+}
+
+.albumList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.album-card {
+  background-color: rgb(8, 10, 10);
+  border-radius: 10px;
+  box-shadow: 2px 5px 5px rgb(36, 36, 36);
+  height: 280px;
+  margin: 10px;
+  padding: 10px;
+  width: 210px;
+}
+
+.album-card:hover {
+  box-shadow: 2px 5px 10px rgb(28, 202, 255);
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: 1.5s;
+}
 
 .album-artist-name {
   align-items: center;
@@ -115,14 +102,13 @@
 
 .album-title {
   align-items: center;
-  color: rgb(255, 255, 255);
+  color: white;
   display: flex;
   height: 200px;
   justify-content: center;
   overflow: auto;
   text-align: center;
   width: 100%;
-  /* border: solid red; */
 }
 
 .album-card a {
@@ -156,60 +142,51 @@
 @media ( max-width : 600px ) {
 
   .search-div input {
-    width: 40%;
-    min-width: 200px;
-    margin: 10px;
     height: 35px;
-    padding: 5px;
-    /* border: solid yellow; */
-  }
-  
-  
-  .search-div button {
-    width: 120px;
     margin: 10px;
-    height: 45px;
+    min-width: 200px;
     padding: 5px;
+    width: 40%;
+  }
+
+  .search-div button {
     font-weight: 800;
-   
+    height: 45px;
+    margin: 10px;
+    padding: 5px;
+    width: 120px;
   }
 
   .albumList {
     display: flex;
     flex-wrap: wrap;
     margin: auto;
+    margin-bottom: 30px;
     margin-top: 30px;
     width: 90%;
-    margin-bottom: 30px;
-    /* border: solid yellow; */
   }
 
   .album-card {
     background-color: #000000;
     border-radius: 10px;
-    width: 160px;
-    height: 210px;
     box-shadow: 2px 5px 5px rgb(36, 36, 36);
+    height: 210px;
     margin: 5px;
-    /* padding: 5px; */
-    /* border: solid aqua; */
+    width: 160px;
   }
 
   .album-artist-name {
+    color: rgb(28, 202, 255);
     font-size: 14px;
     height: 35px;
-    color: rgb(28, 202, 255);
-    overflow:scroll;
-    /* border: solid magenta; */
+    overflow: scroll;
   }
 
   .album-title {
-    /* margin-top: 20px; */
+    color: white;
+    font-size: 12px;
     height: 150px;
     width: 100%;
-    font-size: 12px;
-    /* border: solid darkblue; */
-    color: white;
   }
 
   .album-card a {
@@ -220,8 +197,7 @@
   .album-card img {
     border-radius: 10px;
     display: flex;
-    width: 110px;
     padding: 4px;
+    width: 110px;
   }
-
 }

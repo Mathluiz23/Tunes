@@ -5,16 +5,15 @@
   width: 180px;
   -webkit-transition: width 5s, height 5s, background-color 2s, -webkit-transform 2s;
   transition: width 5s, height 5s, background-color 2s, transform 2s;
-  /* border: solid yellow; */
 }
 
 .profile-image:hover {
   background-color: #FFCCCC;
   box-shadow: 10px -10px 20px rgb(65, 150, 167);
   height: 280px;
-  width: 280px;
-  -webkit-transform: rotate(360deg);
   transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  width: 280px;
 }
 
 h3 {
@@ -24,58 +23,50 @@ h3 {
 h1 {
   align-items: center;
   color: rgb(28, 202, 255);
-  text-align: center;
   margin: 15px;
-  /* border: solid yellow; */
+  text-align: center;
 }
 
 .container-profile {
+  align-items: center;
   display: flex;
   flex-direction: column;
+  height: 90%;
   justify-content: center;
-  align-items: center;
-  /* flex-wrap: wrap; */
   margin: auto;
   width: 100%;
-  height: 90%;
-  border: solid violet;
 }
 
 .profile-name {
-  /* display: flex; */
-  justify-content: center;
   align-items: center;
-  /* border: solid greenyellow; */
   flex-wrap: wrap;
+  font-size: 16px;
+  justify-content: center;
   margin: 10px;
   padding: 5px;
   text-align: center;
   width: 80%;
-  font-size: 16px;
 }
 
 .profile-email {
-  /* display: flex; */
-  justify-content: center;
   align-items: center;
-  /* border: solid greenyellow; */
   flex-wrap: wrap;
+  font-size: 16px;
+  justify-content: center;
   margin: 10px;
   padding: 5px;
   text-align: center;
   width: 80%;
-  font-size: 16px;
 }
 
 .profile-description {
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  /* border: solid greenyellow; */
   flex-wrap: wrap;
-  width: 50%;
-  min-height: 150px;
   font-size: 16px;
+  justify-content: center;
+  min-height: 150px;
+  width: 50%;
 }
 
 .profile-description h3 {
@@ -84,16 +75,15 @@ h1 {
 }
 
 .profile-description textarea {
- height: 90px;
+  color: black;
+  height: 90px;
 }
 
 .button-edit-perfil {
-  /* border: solid violet; */
-  width: 150px;
   margin: 10px;
+  width: 150px;
 }
 
 label {
   margin: 5px;
-  /* border: solid blue; */
 }

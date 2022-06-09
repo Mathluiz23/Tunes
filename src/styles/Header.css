@@ -6,10 +6,10 @@
   display: flex;
   height: 60px;
   margin: auto;
+  margin-top: 50px;
   padding: 5px 25px;
   position: relative;
   text-align: center;
-  margin-top: 50px;
   width: 88%;
 }
 
@@ -62,16 +62,15 @@
 @media ( max-width : 600px ) {
 
   .header-component {
-    width: 90%;
     min-width: 300px;
     padding: 5px;
-    /* border: solid green; */
+    width: 90%;
   }
 
   .header-component a {
     font-weight: 500;
-    text-decoration: none;
     margin-left: 0;
+    text-decoration: none;
   }
 
   .profile-container {
