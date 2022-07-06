@@ -25,7 +25,7 @@ export default class Content extends Component {
         { isLogged
           ? (
             <Header />) : ''}
-        <main className={ isLogged ? '' : 'login-page' }>
+        <main className="login-page">
           <Switch>
             <Route exact path="/">
               { isLogged

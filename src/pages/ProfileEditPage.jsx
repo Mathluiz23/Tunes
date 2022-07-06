@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Loading from '../components/Loading';
 import { getUser, updateUser } from '../services/userAPI';
 import '../styles/ProfileEdit.css';
+import userPattern from '../images/userPattern.png';
 
 class ProfileEditPage extends Component {
   constructor() {
@@ -135,7 +136,7 @@ class ProfileEditPage extends Component {
                 type="text"
                 placeholder="Link da imagem"
                 name="image"
-                value={ image }
+                value={ image || userPattern }
                 onChange={ this.handleChange }
                 required
               />

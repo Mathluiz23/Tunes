@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { getUser } from '../services/userAPI';
 import Loading from './Loading';
 import '../styles/Header.css';
-import userPattern from '../images/user-01.png';
+import userPattern from '../images/userPattern.png';
 
 class Header extends Component {
   constructor() {

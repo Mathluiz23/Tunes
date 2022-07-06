@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Loading from '../components/Loading';
 import { getUser } from '../services/userAPI';
 import '../styles/Profile.css';
-import userPattern from '../images/user-01.png';
+import userPattern from '../images/userPattern.png';
 
 class ProfilePage extends Component {
   constructor() {
