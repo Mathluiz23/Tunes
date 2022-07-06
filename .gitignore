@@ -12,7 +12,7 @@
 /build
 
 #Aplicação
-/src/tests
+tests
 
 # misc
 .DS_Store

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Loading from '../components/Loading';
 import { getUser } from '../services/userAPI';
 import '../styles/Profile.css';
+import userPattern from '../images/user-01.png';
 
 class ProfilePage extends Component {
   constructor() {
@@ -38,7 +39,7 @@ class ProfilePage extends Component {
           <img
             data-testid="profile-image"
             className="profile-image"
-            src={ image }
+            src={ image || userPattern }
             alt="Foto de perfil"
           />
           <div data-testid="profile-name" className="profile-name">

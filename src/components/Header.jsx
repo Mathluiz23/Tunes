@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { getUser } from '../services/userAPI';
 import Loading from './Loading';
 import '../styles/Header.css';
+import userPattern from '../images/user-01.png';
 
 class Header extends Component {
   constructor() {
@@ -59,7 +60,10 @@ class Header extends Component {
             : (
               <div className="profile-container">
                 <span className="user-name">{userName}</span>
-                <img src={ profilePicture } alt="Foto de perfil" />
+                <img
+                  src={ profilePicture || userPattern }
+                  alt="Foto de perfil"
+                />
               </div>
             ) }
         </div>

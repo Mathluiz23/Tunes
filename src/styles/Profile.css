@@ -1,20 +1,9 @@
 .profile-image {
-  background-color: rgb(0, 0, 255);
   border-radius: 50%;
   height: 180px;
   width: 180px;
-  -webkit-transition: width 5s, height 5s, background-color 2s, -webkit-transform 2s;
-  transition: width 5s, height 5s, background-color 2s, transform 2s;
 }
 
-.profile-image:hover {
-  background-color: #FFCCCC;
-  box-shadow: 10px -10px 20px rgb(65, 150, 167);
-  height: 280px;
-  transform: rotate(360deg);
-  -webkit-transform: rotate(360deg);
-  width: 280px;
-}
 
 h3 {
   font-weight: 700;
