@@ -89,4 +89,5 @@ AlbumPage.propTypes = {
     params: PropTypes.shape({ id: PropTypes.string }),
   }).isRequired,
 };
+
 export default AlbumPage;

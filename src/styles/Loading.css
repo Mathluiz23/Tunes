@@ -1,14 +1,14 @@
 .loading {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  margin: auto;
   animation: is-rotating 1s infinite;
   border: 6px solid #e5e5e5;
   border-radius: 50%;
   border-top-color: #51d4db;
-  height: 45px;
+  display: flex;
   font-size: 6px;
+  height: 45px;
+  justify-content: center;
+  margin: auto;
   width: 45px;
 }
 

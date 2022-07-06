@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-// import { GiMusicalNotes } from 'react-icons/gi';
 import { createUser } from '../services/userAPI';
 import Loading from '../components/Loading';
 import '../styles/Login.css';
@@ -24,7 +23,6 @@ class LoginPage extends Component {
     const { name, email, description, image } = this.state;
     this.setState({ loading: true });
     createUser({ name, email, description, image }).then(() => {
-      // this.setState({ loading: false });
       handleSubmit();
     });
   }

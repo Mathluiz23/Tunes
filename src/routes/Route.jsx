@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import Header from '../components/Header';
-// import MathTunes from '../components/MathTunes';
 import Login from '../pages/LoginPage';
 import AlbumPage from '../pages/AlbumPage';
 import FavoritePage from '../pages/FavoritePage';
