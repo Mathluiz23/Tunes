@@ -1,8 +1,8 @@
-<h1 align="center">
-    <img alt="FeelTheSound" title="FeelTheSound" src="src/images/FeelTheSound.png" height="120px" width="800px"/>
-</h1>
+<h1 align="center">🎵 Feel The Sound 🎵</h1>
 
-## 💻 🎵 Projeto
+
+
+## 💻 Projeto
 
 Projeto do módulo de Front-End desenvolvido no Curso de Desenvolvimento Web da Trybe.
 Este projeto tem como objetivo criar uma aplicação capaz de pesquisar e reproduzir músicas das mais variadas bandas e artistas.
@@ -34,7 +34,7 @@ Neste projeto, foram utilizadas as seguintes habilidades:
 
 - Criar links de navegação na aplicação com o componente `Link`;
 
-## Screenshot
+## Tela de pesquisa
 
 ![App Screenshot](src/images/Tela-readme.png)
 
