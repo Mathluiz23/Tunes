@@ -1,7 +1,6 @@
 <h1 align="center">
-    <img alt="FeelTheSound" title="FeelTheSound" src="src/images/FeelTheSound.png" height="80px" width="200px"
-    border-radius="5px" />
-  <i>FeelTheSound</i>
+    <img alt="FeelTheSound" title="FeelTheSound" src="src/images/FeelTheSound.png" height="80px" width="1000px"
+    border-radius="10%" />
 </h1>
 
 ## 💻 Projeto
