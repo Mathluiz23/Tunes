@@ -86,7 +86,7 @@ class ProfileEditPage extends Component {
         <img
           className="profile-image"
           data-testid="profile-image"
-          src={ currentImage }
+          src={ currentImage || userPattern }
           alt="Foto de perfil"
         />
         {loading ? (

@@ -12,6 +12,7 @@ class Header extends Component {
     this.state = {
       userName: '',
       loading: true,
+      currentImage: '',
     };
   }
 
@@ -28,7 +29,7 @@ class Header extends Component {
   }
 
   render() {
-    const { userName, profilePicture, loading } = this.state;
+    const { userName, profilePicture, loading, currentImage } = this.state;
 
     return (
       <header data-testid="header-component" className="header-component">
@@ -61,7 +62,7 @@ class Header extends Component {
               <div className="profile-container">
                 <span className="user-name">{userName}</span>
                 <img
-                  src={ profilePicture || userPattern }
+                  src={ profilePicture || userPattern || currentImage }
                   alt="Foto de perfil"
                 />
               </div>
