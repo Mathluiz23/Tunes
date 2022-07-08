@@ -2,7 +2,7 @@
 
 
 ## Deploy
-https://tunes-mathluiz23.vercel.app/search
+click aqui: https://tunes-mathluiz23.vercel.app
 
 ## 💻 Projeto
 
