@@ -63,4 +63,7 @@ Inicie o projeto
 
 ```bash
   npm run start
+<<<<<<< HEAD
 ```
+=======
+>>>>>>> a14e47e550f4ccd8c4362ea714992d620d4be965
