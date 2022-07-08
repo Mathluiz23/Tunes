@@ -168,10 +168,10 @@
   }
 
   .album-card {
-    background-color: #000000;
+    background-color: #06141c;
     border-radius: 10px;
-    box-shadow: 2px 5px 5px rgb(36, 36, 36);
-    height: 210px;
+    box-shadow: 2px 5px 5px rgb(15, 45, 70);
+    height: 205px;
     margin: 5px;
     width: 160px;
   }
