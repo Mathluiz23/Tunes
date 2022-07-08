@@ -30,9 +30,10 @@ class FavoriteSong extends Component {
   onFavoriteClick = async (isFavorite) => {
     const { trackInfo } = this.props;
     const toggle = isFavorite ? removeSong : addSong;
-    this.setState({ loading: true });
+    // this.setState({ loading: true });
     await toggle(trackInfo);
     this.setState({ loading: false, isFavorite: !isFavorite });
+    this.setState({ isFavorite: !isFavorite });
   }
 
   render() {

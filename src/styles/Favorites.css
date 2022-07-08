@@ -1,6 +1,7 @@
 .favorites-album-artwork {
   border-radius: 7px;
   height: 80px;
+  margin-left: 5px;
   margin-right: 5px;
 }
 
@@ -21,7 +22,7 @@
 
   .favorite-songs-list h2 {
     align-items: center;
-    font-size: 15px;
+    font-size: 13px;
     margin: auto;
     margin-top: 20px;
     text-align: center;

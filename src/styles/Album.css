@@ -11,7 +11,6 @@
   display: flex;
   justify-content: space-around;
   margin-top: 25px;
-  width: 100%;
 }
 
 .music-card-name {
@@ -19,16 +18,18 @@
   display: flex;
   font-size: 19px;
   height: 100%;
+  margin: 10px;
   margin-left: 15px;
   min-width: 100px;
-  width: 30%;
+  width: 20%;
 }
 
 .audio-album {
   display: flex;
   height: 60px;
   justify-content: center;
-  width: 60%;
+  min-width: 100px;
+  width: 55%;
 }
 
 .music-card label {
@@ -51,8 +52,9 @@ audio {
   background-color: rgb(242, 242, 242);
   border-radius: 8px;
   box-shadow: 2px 1px 3px 0 rgb(28, 202, 255);
+  display: flex;
   height: 100%;
-  min-width: 150px;
+  justify-content: space-around;
   transition: all 0.7s linear;
   width: 75%;
 }
@@ -97,7 +99,7 @@ h2 {
     display: flex;
     justify-content: space-around;
     margin-top: 25px;
-    width: 100%;
+    width: 98%;
   }
 
   .music-card-name {
@@ -108,7 +110,7 @@ h2 {
     height: 100%;
     justify-content: center;
     max-height: 55px;
-    max-width: 140px;
+    max-width: 120px;
     text-align: center;
     width: 20%;
   }
@@ -117,7 +119,7 @@ h2 {
     display: flex;
     height: 60px;
     justify-content: center;
-    padding: 10px;
+    padding: 5px;
     width: 60%;
   }
 
