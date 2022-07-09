@@ -1,7 +1,15 @@
+<<<<<<< HEAD
 <h1 align="center">
     <img alt="FeelTheSound" title="FeelTheSound" src="src/images/FeelTheSound.png" height="100px" width="600px"
     border-radius="10%" />
 </h1>
+=======
+<h1 align="center">🎵 Tunes - Feel The Sound 🎵</h1>
+
+
+## Deploy
+click aqui: https://tunes-mathluiz23.vercel.app
+>>>>>>> 167cf3c9c482e2d3b486c63e76c95ee2bc8e218b
 
 ## 💻 Projeto
 
@@ -35,7 +43,7 @@ Neste projeto, foram utilizadas as seguintes habilidades:
 
 - Criar links de navegação na aplicação com o componente `Link`;
 
-## Screenshot
+## Tela de pesquisa
 
 ![App Screenshot](src/images/Tela-readme.png)
 
@@ -50,7 +58,7 @@ Clone o projeto
 Entre no diretório do projeto
 
 ```bash
-  cd tunes
+  cd Tunes
 ```
 
 Instale as dependências
