@@ -1,0 +1,13 @@
+.not-found {
+  display: flex;
+  margin: auto;
+}
+
+.not-results {
+  display: flex;
+  font-size: 13px;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 20px;
+  text-align: center;
+}

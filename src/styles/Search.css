@@ -13,6 +13,7 @@
 } */
 
 .search-results {
+  font-size: 13px;
   margin: auto;
   margin-top: 20px;
 }
@@ -70,9 +71,9 @@
 }
 
 .album-card {
-  background-color: #06141c;
+  background-color: rgb(10, 35, 55);
   border-radius: 10px;
-  box-shadow: 2px 5px 5px rgb(15, 45, 70);
+  box-shadow: 2px 5px 5px rgb(17, 115, 195);
   height: 280px;
   margin: 10px;
   margin-top: 25px;
@@ -168,9 +169,9 @@
   }
 
   .album-card {
-    background-color: #06141c;
+    background-color: rgb(10, 35, 55);
     border-radius: 10px;
-    box-shadow: 2px 5px 5px rgb(15, 45, 70);
+    box-shadow: 2px 5px 5px rgb(17, 115, 195);
     height: 205px;
     margin: 5px;
     width: 160px;
