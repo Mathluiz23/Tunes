@@ -143,6 +143,10 @@
 
 @media ( max-width : 600px ) {
 
+  .search-results {
+    font-size: 10px;
+  }
+
   .search-div input {
     height: 35px;
     margin: 10px;
