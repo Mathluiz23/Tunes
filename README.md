@@ -1,4 +1,4 @@
-<h1 align="center">🎵 Feel The Sound 🎵</h1>
+<h1 align="center">🎵 Tunes - Feel The Sound 🎵</h1>
 
 
 ## Deploy
@@ -51,7 +51,7 @@ Clone o projeto
 Entre no diretório do projeto
 
 ```bash
-  cd tunes
+  cd Tunes
 ```
 
 Instale as dependências
