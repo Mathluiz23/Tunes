@@ -88,22 +88,12 @@
   width: 100%;
 }
 
-/* .music {
-  color: rgb(28, 202, 255);
-  height: 50px;
-  width: 100px;
-} */
-
 .login-image-input {
   display: flex;
   height: 80px;
   justify-content: center;
   width: 100%;
 }
-
-/* .music a {
-  color: rgb(28, 202, 255);
-} */
 
 .login-description-input {
   align-items: flex-start;
@@ -130,10 +120,6 @@
   padding: 5px;
   width: 50px;
 }
-
-/* .fa-headphones {
-  height: 50px;
-} */
 
 .button-entrar {
   align-items: center;
