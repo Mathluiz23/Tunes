@@ -2,7 +2,10 @@
 <h1 align="center">🎵 Tunes - Feel The Sound 🎵</h1>
 
 
-## Deploy
+## 🖥️📱 Deploy
+
+Neste link você tem acesso ao projeto disponibilizado na web.
+
 click aqui: https://tunes-mathluiz23.vercel.app
 
 ## 💻 Projeto
@@ -11,13 +14,13 @@ Projeto do módulo de Front-End desenvolvido no Curso de Desenvolvimento Web da 
 Este projeto tem como objetivo criar uma aplicação capaz de pesquisar e reproduzir músicas das mais variadas bandas e artistas.
 A pessoa usuária poderá fazer o login com seu email e adicionar uma imagem de perfil. Após o login será possível realizar pesquisas de bandas e artistas, buscando diversos albuns referente ao artista pesquisado, sendo possível reproduzir as músicas do album, também criar uma lista de músicas favoritas e editar o perfil do usuário.
 
-## Demonstração
+## ⏯️ Demonstração
 
 <div align="center">
     <img alt="gif de apresentação" src="src/images/Tunes.gif"/>
 </div>
 
-## Habilidades
+## 👨‍🔧 Habilidades
 
 Neste projeto, foram utilizadas as seguintes habilidades:
 
@@ -41,7 +44,7 @@ Neste projeto, foram utilizadas as seguintes habilidades:
 
 ![App Screenshot](src/images/Tela-readme.png)
 
-## Rodando o projeto localmente
+## 👨‍💻 Rodando o projeto localmente
 
 Clone o projeto
 
