@@ -1,70 +1,69 @@
-
 <h1 align="center">🎵 Tunes - Feel The Sound 🎵</h1>
-
 
 ## 🖥️📱 Deploy
 
-Neste link você tem acesso ao projeto disponibilizado na web.
+You can access the deployed version of this project at the link below:
 
-click aqui: https://tunes-mathluiz23.vercel.app
+Click here: https://tunes-mathluiz23.vercel.app
 
-## 💻 Projeto
+## 💻 Project
 
-Projeto do módulo de Front-End desenvolvido no Curso de Desenvolvimento Web da Trybe.
-Este projeto tem como objetivo criar uma aplicação capaz de pesquisar e reproduzir músicas das mais variadas bandas e artistas.
-A pessoa usuária poderá fazer o login com seu email e adicionar uma imagem de perfil. Após o login será possível realizar pesquisas de bandas e artistas, buscando diversos albuns referente ao artista pesquisado, sendo possível reproduzir as músicas do album, também criar uma lista de músicas favoritas e editar o perfil do usuário.
+This is a Front-End module project developed during the Web Development Course at Trybe.  
+The goal of this project is to create an application capable of searching for and playing music from various bands and artists.
 
-## ⏯️ Demonstração
+Users can log in using their email and upload a profile picture. After logging in, they can search for bands and artists, browse multiple albums related to the searched artist, play songs from the album, add songs to their list of favorites, and edit their user profile.
+
+## ⏯️ Demo
 
 <div align="center">
-    <img alt="gif de apresentação" src="src/images/Tunes.gif"/>
+    <img alt="presentation gif" src="src/images/Tunes.gif"/>
 </div>
 
-## 👨‍🔧 Habilidades
+## 👨‍🔧 Skills
 
-Neste projeto, foram utilizadas as seguintes habilidades:
+In this project, the following skills were applied:
 
-- Fazer requisições e consumir dados vindos de uma `API`;
+- Make requests and consume data from an `API`.
 
-- Utilizar os ciclos de vida de um componente React;
+- Use React component lifecycle methods.
 
-- Utilizar a função `setState` de forma a garantir que um determinado código só é executado após o estado ser atualizado
+- Use the `setState` function in a way that ensures code execution after state update.
 
-- Utilizar o componente `BrowserRouter` corretamente;
+- Use the `BrowserRouter` component correctly.
 
-- Criar rotas, mapeando o caminho da URL com o componente correspondente, via `Route`;
+- Create routes, mapping URL paths to the corresponding components via `Route`.
 
-- Utilizar o `Switch` do `React Router`
+- Use `Switch` from `React Router`.
 
-- Usar o componente `Redirect` pra redirecionar para uma rota específica;
+- Use the `Redirect` component to redirect to a specific route.
 
-- Criar links de navegação na aplicação com o componente `Link`;
+- Create navigation links in the application using the `Link` component.
 
-## Tela de pesquisa
+## Search Screen
 
 ![App Screenshot](src/images/Tela-readme.png)
 
-## 👨‍💻 Rodando o projeto localmente
+## 👨‍💻 Running the project locally
 
-Clone o projeto
+Clone the repository
 
 ```bash
   git clone git@github.com:Mathluiz23/Tunes.git
 ```
 
-Entre no diretório do projeto
+Enter the project directory
 
 ```bash
   cd Tunes
 ```
 
-Instale as dependências
+Install dependencies
 
 ```bash
   npm install
 ```
 
-Inicie o projeto
+Start the project
 
 ```bash
   npm start
