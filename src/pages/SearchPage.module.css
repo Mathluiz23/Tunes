@@ -1,0 +1,43 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.searchBar {
+  display: flex;
+  gap: var(--space-3);
+}
+
+.searchBar input {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  color: var(--color-text);
+  flex: 1;
+  font-size: 0.9rem;
+  height: 42px;
+  padding: 0 var(--space-4);
+}
+
+.searchBar input:focus {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 1px;
+}
+
+.resultsLabel {
+  color: var(--color-text-secondary);
+  font-size: 0.85rem;
+}
+
+.empty {
+  color: var(--color-text-secondary);
+  padding: var(--space-6) 0;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  gap: var(--space-4);
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+}
