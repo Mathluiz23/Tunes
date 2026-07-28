@@ -4,7 +4,7 @@
 
 You can access the deployed version of this project at the link below:
 
-Click here: https://tunes-mathluiz23.vercel.app
+Click here: https://tunes-one.vercel.app/search
 
 ## 💻 Project
 
