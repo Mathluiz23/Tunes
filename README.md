@@ -8,10 +8,10 @@ Click here: https://tunes-mathluiz23.vercel.app
 
 ## 💻 Project
 
-This is a Front-End module project developed during the Web Development Course at Trybe.  
-The goal of this project is to create an application capable of searching for and playing music from various bands and artists.
+This started as a Front-End module project built during the Web Development Course at Trybe, and was later rewritten as a personal portfolio piece.
+The goal of the application is to search for and play music from bands and artists via the iTunes API.
 
-Users can log in using their email and upload a profile picture. After logging in, they can search for bands and artists, browse multiple albums related to the searched artist, play songs from the album, add songs to their list of favorites, and edit their user profile.
+Users can log in with a name, email and profile picture. After logging in, they can search for bands and artists, browse the albums returned for that search, play song previews, favorite tracks, and edit their profile.
 
 ## ⏯️ Demo
 
@@ -19,25 +19,18 @@ Users can log in using their email and upload a profile picture. After logging i
     <img alt="presentation gif" src="src/images/Tunes.gif"/>
 </div>
 
-## 👨‍🔧 Skills
+*(gif/screenshot above are from the previous version and are due for an update)*
 
-In this project, the following skills were applied:
+## 🛠️ Tech stack
 
-- Make requests and consume data from an `API`.
-
-- Use React component lifecycle methods.
-
-- Use the `setState` function in a way that ensures code execution after state update.
-
-- Use the `BrowserRouter` component correctly.
-
-- Create routes, mapping URL paths to the corresponding components via `Route`.
-
-- Use `Switch` from `React Router`.
-
-- Use the `Redirect` component to redirect to a specific route.
-
-- Create navigation links in the application using the `Link` component.
+- [React 19](https://react.dev/) with function components and hooks
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/) for dev server and build
+- [React Router v6](https://reactrouter.com/) for routing, with protected/guest route guards
+- React Context (`AuthContext`, `FavoritesContext`) for shared app state
+- CSS Modules with a small design-token system (`src/styles/tokens.css`) — no UI framework
+- iTunes Search/Lookup API for album and track data
+- `localStorage` as a mock backend for the user profile and favorites (no real server)
 
 ## Search Screen
 
@@ -63,8 +56,14 @@ Install dependencies
   npm install
 ```
 
-Start the project
+Start the project (runs at http://localhost:3003)
 
 ```bash
-  npm start
+  npm run dev
+```
+
+Build for production
+
+```bash
+  npm run build
 ```
