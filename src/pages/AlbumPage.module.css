@@ -1,0 +1,46 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.header {
+  align-items: center;
+  display: flex;
+  gap: var(--space-5);
+}
+
+.artwork {
+  border-radius: var(--radius-md);
+  flex-shrink: 0;
+  height: 120px;
+  object-fit: cover;
+  width: 120px;
+}
+
+.header h1 {
+  font-size: 1.4rem;
+}
+
+.artist {
+  color: var(--color-text-secondary);
+  margin-top: var(--space-2);
+}
+
+.tracklist {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+@media ( max-width : 560px ) {
+
+  .header {
+    gap: var(--space-3);
+  }
+
+  .artwork {
+    height: 80px;
+    width: 80px;
+  }
+}
