@@ -1,0 +1,33 @@
+.card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  padding: var(--space-3);
+  transition: background-color 0.15s ease , transform 0.15s ease;
+}
+
+.card:hover {
+  background-color: var(--color-surface-hover);
+  transform: translateY(-2px);
+}
+
+.artwork {
+  aspect-ratio: 1;
+  border-radius: var(--radius-sm);
+  margin-bottom: var(--space-2);
+  object-fit: cover;
+  width: 100%;
+}
+
+.title {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.artist {
+  color: var(--color-text-secondary);
+  font-size: 0.8rem;
+}
