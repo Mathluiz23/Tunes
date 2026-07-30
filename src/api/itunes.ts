@@ -4,9 +4,12 @@ const ITUNES_BASE_URL = 'https://itunes.apple.com';
 
 export class ItunesApiError extends Error {}
 
-export const searchAlbums = async (artist: string): Promise<Album[]> => {
-  const term = encodeURIComponent(artist);
-  const url = `${ITUNES_BASE_URL}/search?entity=album&term=${term}&attribute=allArtistTerm`;
+export type SearchMode = 'artist' | 'album';
+
+export const searchAlbums = async (query: string, mode: SearchMode = 'artist'): Promise<Album[]> => {
+  const term = encodeURIComponent(query);
+  const attribute = mode === 'artist' ? '&attribute=allArtistTerm' : '';
+  const url = `${ITUNES_BASE_URL}/search?entity=album&term=${term}${attribute}`;
 
   let response: Response;
   try {
