@@ -1,0 +1,134 @@
+.bar {
+  align-items: center;
+  background-color: var(--color-surface);
+  border-top: 1px solid var(--color-border);
+  bottom: 0;
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  gap: var(--space-5);
+  height: var(--player-height);
+  left: 0;
+  padding: 0 var(--space-6);
+  position: fixed;
+  right: 0;
+  z-index: 20;
+}
+
+.track {
+  align-items: center;
+  display: flex;
+  gap: var(--space-3);
+  min-width: 0;
+  width: 220px;
+}
+
+.trackLink {
+  border-radius: var(--radius-sm);
+  padding: var(--space-1);
+  transition: background-color 0.15s ease;
+}
+
+.trackLink:hover {
+  background-color: var(--color-surface-hover);
+}
+
+.artwork {
+  border-radius: var(--radius-sm);
+  flex-shrink: 0;
+  height: 44px;
+  object-fit: cover;
+  width: 44px;
+}
+
+.info {
+  min-width: 0;
+}
+
+.trackName {
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.artist {
+  color: var(--color-text-secondary);
+  font-size: 0.75rem;
+}
+
+.controls {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: var(--space-1);
+  justify-content: center;
+}
+
+.buttons {
+  align-items: center;
+  display: flex;
+  gap: var(--space-3);
+}
+
+.iconButton {
+  background: transparent;
+  border: none;
+  color: var(--color-text-secondary);
+  display: flex;
+  font-size: 0.9rem;
+}
+
+.iconButton:disabled {
+  color: var(--color-text-muted);
+  opacity: 0.4;
+}
+
+.iconButton:hover:not( :disabled ) {
+  color: var(--color-text);
+}
+
+.playButton {
+  align-items: center;
+  background-color: var(--color-accent);
+  border: none;
+  border-radius: var(--radius-pill);
+  color: var(--color-bg);
+  display: flex;
+  font-size: 0.85rem;
+  height: 34px;
+  justify-content: center;
+  width: 34px;
+}
+
+.playButton:hover {
+  background-color: var(--color-accent-hover);
+}
+
+.progressRow {
+  align-items: center;
+  display: flex;
+  gap: var(--space-2);
+  max-width: 480px;
+  width: 100%;
+}
+
+.time {
+  color: var(--color-text-muted);
+  font-size: 0.7rem;
+  width: 32px;
+}
+
+.progress {
+  accent-color: var(--color-accent);
+  flex: 1;
+}
+
+@media ( max-width : 640px ) {
+
+  .track {
+    width: auto;
+  }
+
+  .info {
+    display: none;
+  }
+}
