@@ -11,4 +11,5 @@ export interface FavoriteTrack {
   artist: string;
   previewUrl: string;
   artwork: string;
+  albumId?: number;
 }
