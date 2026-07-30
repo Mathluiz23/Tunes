@@ -25,6 +25,51 @@
   outline-offset: 1px;
 }
 
+.modeToggle {
+  display: flex;
+  gap: var(--space-2);
+}
+
+.modeButton {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-pill);
+  color: var(--color-text-secondary);
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: var(--space-1) var(--space-4);
+}
+
+.modeButton:hover {
+  color: var(--color-text);
+}
+
+.modeActive {
+  background-color: var(--color-accent-soft);
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+.history {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.historyChip {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-pill);
+  color: var(--color-text-secondary);
+  font-size: 0.78rem;
+  padding: var(--space-1) var(--space-3);
+}
+
+.historyChip:hover {
+  border-color: var(--color-accent);
+  color: var(--color-text);
+}
+
 .resultsLabel {
   color: var(--color-text-secondary);
   font-size: 0.85rem;
