@@ -1,5 +1,6 @@
 import { type FormEvent, useState } from 'react';
-import { searchAlbums } from '../api/itunes';
+import { searchAlbums, type SearchMode } from '../api/itunes';
+import { addSearchHistory, getSearchHistory } from '../api/searchHistory';
 import { useAsync } from '../hooks/useAsync';
 import AlbumCard from '../components/AlbumCard';
 import Loading from '../components/Loading';
@@ -11,14 +12,26 @@ const MIN_QUERY_LENGTH = 2;
 
 export default function SearchPage() {
   const [query, setQuery] = useState('');
+  const [mode, setMode] = useState<SearchMode>('artist');
   const [lastSearch, setLastSearch] = useState('');
+  const [history, setHistory] = useState<string[]>(() => getSearchHistory());
   const { data: albums, loading, error, run } = useAsync(searchAlbums);
+
+  const runSearch = (term: string, searchMode: SearchMode) => {
+    if (term.length < MIN_QUERY_LENGTH) return;
+    setLastSearch(term);
+    run(term, searchMode);
+    setHistory(addSearchHistory(term));
+  };
 
   const handleSubmit = (event: FormEvent) => {
     event.preventDefault();
-    if (query.length < MIN_QUERY_LENGTH) return;
-    setLastSearch(query);
-    run(query);
+    runSearch(query, mode);
+  };
+
+  const handleHistoryClick = (term: string) => {
+    setQuery(term);
+    runSearch(term, mode);
   };
 
   return (
@@ -26,7 +39,7 @@ export default function SearchPage() {
       <form className={ styles.searchBar } onSubmit={ handleSubmit }>
         <input
           type="text"
-          placeholder="Nome do artista ou banda"
+          placeholder={ mode === 'artist' ? 'Nome do artista ou banda' : 'Nome do álbum' }
           value={ query }
           onChange={ (e) => setQuery(e.target.value) }
         />
@@ -35,8 +48,44 @@ export default function SearchPage() {
         </Button>
       </form>
 
+      <div className={ styles.modeToggle } role="radiogroup" aria-label="Buscar por">
+        <button
+          type="button"
+          role="radio"
+          aria-checked={ mode === 'artist' }
+          className={ `${styles.modeButton} ${mode === 'artist' ? styles.modeActive : ''}` }
+          onClick={ () => setMode('artist') }
+        >
+          Artista
+        </button>
+        <button
+          type="button"
+          role="radio"
+          aria-checked={ mode === 'album' }
+          className={ `${styles.modeButton} ${mode === 'album' ? styles.modeActive : ''}` }
+          onClick={ () => setMode('album') }
+        >
+          Álbum
+        </button>
+      </div>
+
+      {history.length > 0 && !loading && (
+        <div className={ styles.history }>
+          {history.map((term) => (
+            <button
+              key={ term }
+              type="button"
+              className={ styles.historyChip }
+              onClick={ () => handleHistoryClick(term) }
+            >
+              {term}
+            </button>
+          ))}
+        </div>
+      )}
+
       {loading && <Loading />}
-      {error && <ErrorMessage message={ error } onRetry={ () => run(lastSearch) } />}
+      {error && <ErrorMessage message={ error } onRetry={ () => run(lastSearch, mode) } />}
 
       {albums && !loading && !error && (
         albums.length === 0 ? (
