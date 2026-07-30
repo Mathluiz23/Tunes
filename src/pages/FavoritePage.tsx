@@ -15,7 +15,7 @@ export default function FavoritePage() {
   return (
     <div className={ styles.list }>
       {favorites.map((track) => (
-        <MusicCard key={ track.trackId } track={ track } />
+        <MusicCard key={ track.trackId } track={ track } queue={ favorites } />
       ))}
     </div>
   );
