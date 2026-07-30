@@ -7,7 +7,12 @@ interface AlbumCardProps {
 }
 
 export default function AlbumCard({ album }: AlbumCardProps) {
-  const { collectionId, collectionName, artistName, artworkUrl100 } = album;
+  const {
+    collectionId, collectionName, artistName, artworkUrl100,
+    releaseDate, trackCount, primaryGenreName,
+  } = album;
+
+  const year = releaseDate ? new Date(releaseDate).getFullYear() : null;
 
   return (
     <Link to={ `/album/${collectionId}` } className={ styles.card }>
@@ -17,6 +22,9 @@ export default function AlbumCard({ album }: AlbumCardProps) {
       </p>
       <p className={ `${styles.artist} truncate` } title={ artistName }>
         {artistName}
+      </p>
+      <p className={ `${styles.meta} truncate` }>
+        {[year, primaryGenreName, trackCount && `${trackCount} faixas`].filter(Boolean).join(' · ')}
       </p>
     </Link>
   );
