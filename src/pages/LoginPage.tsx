@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import Button from '../components/Button';
 import Loading from '../components/Loading';
-import logotunes from '../images/logotunes.png';
+import TunesLogo from '../components/TunesLogo';
 import styles from './LoginPage.module.css';
 
 const MIN_NAME_LENGTH = 3;
@@ -45,7 +45,7 @@ export default function LoginPage() {
   return (
     <div className={ styles.page }>
       <form className={ styles.card } onSubmit={ handleSubmit }>
-        <img className={ styles.logo } alt="Tunes" src={ logotunes } />
+        <TunesLogo className={ styles.logo } />
 
         <label className={ styles.field } htmlFor="login-name-input">
           Nome
