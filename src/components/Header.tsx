@@ -1,6 +1,7 @@
 import { NavLink, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import userPattern from '../images/userPattern.png';
+import TunesLogo from './TunesLogo';
 import styles from './Header.module.css';
 
 export default function Header() {
@@ -19,7 +20,7 @@ export default function Header() {
   return (
     <header className={ styles.header }>
       <NavLink to="/search" className={ styles.brand }>
-        Tunes
+        <TunesLogo size="sm" />
       </NavLink>
       <nav className={ styles.nav }>
         <NavLink to="/search" className={ navLinkClass }>Pesquisa</NavLink>
