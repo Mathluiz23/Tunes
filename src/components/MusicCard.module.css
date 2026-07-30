@@ -6,6 +6,11 @@
   display: flex;
   gap: var(--space-4);
   padding: var(--space-3) var(--space-4);
+  transition: border-color 0.15s ease;
+}
+
+.card.active {
+  border-color: var(--color-accent);
 }
 
 .artwork {
@@ -29,8 +34,26 @@
   font-weight: 500;
 }
 
-.audio {
-  height: 32px;
-  max-width: 320px;
-  width: 100%;
+.artist {
+  color: var(--color-text-secondary);
+  font-size: 0.8rem;
+}
+
+.playButton {
+  align-items: center;
+  background-color: var(--color-surface-hover);
+  border: none;
+  border-radius: var(--radius-pill);
+  color: var(--color-text);
+  display: flex;
+  flex-shrink: 0;
+  font-size: 0.85rem;
+  height: 36px;
+  justify-content: center;
+  width: 36px;
+}
+
+.playButton:hover {
+  background-color: var(--color-accent);
+  color: var(--color-bg);
 }
