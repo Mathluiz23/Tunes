@@ -7,6 +7,7 @@ export interface Album {
   artworkUrl100: string;
   releaseDate: string;
   trackCount: number;
+  primaryGenreName?: string;
 }
 
 export interface Track {
